@@ -1,0 +1,20 @@
+.container{
+    text-align: center;
+    margin: 100px auto;
+}
+.btn{
+    padding: 6px 12px;
+    font-size: 22px;
+    color: wheat;
+    background-color: aquamarine;
+    margin-left: 12px;
+}
+.img-box{
+    border: 2px solid rgb(150, 150, 150);
+    width: 600px;
+    height: 400px;
+}
+.heading {
+    text-align: center;
+    margin: 0 auto;
+}
