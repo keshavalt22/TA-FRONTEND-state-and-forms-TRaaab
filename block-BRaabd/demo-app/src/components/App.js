@@ -1,30 +1,32 @@
 import React from "react";
 
-
-
 class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      counter : 0
+      active: 'basketball'
     }
   }
   render(){
+    let labels = ['basketball', 'pubg', 'tiger', 'phone', 'laptop', 'cricket'];
     return (
       <>
       <h1 className="heading">Assignment</h1>
-      <div className="btn-box container">
-        <button className="btn" onClick={() => {
-          
-        }}>Basketball</button>
-        <button className="btn">PubG</button>
-        <button className="btn">Tiger</button>
-        <button className="btn">Phone</button>
-        <button className="btn">Laptop</button>
-        <button className="btn">Cricket</button>
+      <div className="container">
+        {labels.map((label) => {
+          return (
+            <button className= {this.state.active === label ? "active" : ""} onClick={() => {
+              this.setState({
+                active: label,
+              })
+            }}>{label}</button>
+          )
+        })}
       </div>
       <div className="img-box container">
-        <img src={this.state.counter} alt=""/>
+        <img 
+        src={`./media/${this.state.active}.jpg`} 
+        alt={this.state.active}/>
       </div>
       </>
     )
