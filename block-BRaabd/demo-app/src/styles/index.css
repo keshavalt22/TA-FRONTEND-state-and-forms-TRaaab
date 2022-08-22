@@ -2,12 +2,12 @@
     text-align: center;
     margin: 100px auto;
 }
-.btn{
+button{
     padding: 6px 12px;
     font-size: 22px;
-    color: wheat;
-    background-color: aquamarine;
-    margin-left: 12px;
+    color: rgb(241, 239, 234);
+    background-color: rgb(114, 137, 243);
+    margin-right: 12px;
 }
 .img-box{
     border: 2px solid rgb(150, 150, 150);
@@ -17,4 +17,10 @@
 .heading {
     text-align: center;
     margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.active {
+    background-color: black;
 }
