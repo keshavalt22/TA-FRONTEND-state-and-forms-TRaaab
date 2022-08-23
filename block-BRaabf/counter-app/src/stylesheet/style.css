@@ -10,7 +10,7 @@ button{
     margin-right: 12px;
 }
 button:hover {
-    background-color: rgb(76, 97, 193);
+    background-color: rgb(30, 233, 47);
     color: blanchedalmond;
 }
 .img-box{
@@ -38,4 +38,8 @@ img{
 
 .box{
     margin-left: 2.5rem;
+}
+.active-step {
+    background-color: rgb(30, 233, 47);
+    color: blanchedalmond;
 }

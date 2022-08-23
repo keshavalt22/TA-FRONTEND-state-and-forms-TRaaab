@@ -4,19 +4,23 @@ class App extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      counter : 0
+      counter : 0,
+      step: 5,
+      max: 15
     }
   }
 
   handleIncrement = () => {
+    let {step, max, counter} = this.state;
     this.setState({
-      counter: this.state.counter + 1
+      counter: 
+      counter + step > max ? counter : counter + step
     })
   }
 
   handleDecrement = () => {
     this.setState({
-      counter: this.state.counter -1
+      counter: this.state.counter - this.state.step
     })
   }
 
@@ -34,17 +38,25 @@ class App extends React.Component{
           <h2>{this.state.counter}</h2>
           <div className="flex">
             <div>
-            <h2>Steps</h2>
-            <button>5</button>
-            <button onClick={this.handleDecrement}>10</button>
-            <button onClick={this.handleReset}>15</button>
+              <h2>Steps</h2>
+              {
+                [5,10,15].map((step) => (
+                  <button onClick={() => {
+                    this.setState({step: step})
+                  }} className={this.state.step === step ? "active-step": ""}>{step}</button>
+                ))
+              }
             </div>
-          <div className="box">
-            <h2>Max Value</h2>
-            <button>15</button>
-            <button>100</button>
-            <button>200</button>
-          </div>
+            <div className="box">
+              <h2>Max Value</h2>
+              {
+                [15, 100, 200].map((max) => (
+                  <button onClick={() => {
+                    this.setState({max: max})
+                  }} className={this.state.max === max ? "active-step": ""}>{max}</button>
+                ))
+              }
+            </div>
           </div>
         </div>
         <div className="margin-top">
