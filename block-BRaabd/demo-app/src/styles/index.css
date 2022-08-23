@@ -1,0 +1,26 @@
+.container{
+    text-align: center;
+    margin: 100px auto;
+}
+button{
+    padding: 6px 12px;
+    font-size: 22px;
+    color: rgb(241, 239, 234);
+    background-color: rgb(114, 137, 243);
+    margin-right: 12px;
+}
+.img-box{
+    border: 2px solid rgb(150, 150, 150);
+    width: 600px;
+    height: 400px;
+}
+.heading {
+    text-align: center;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+.active {
+    background-color: black;
+}
