@@ -1,0 +1,59 @@
+.container{
+    text-align: center;
+    margin: 20px auto;
+}
+button{
+    padding: 6px 12px;
+    font-size: 22px;
+    color: rgb(241, 239, 234);
+    background-color: rgb(114, 137, 243);
+    margin-right: 12px;
+}
+li:hover {
+    background-color: rgb(30, 233, 47);
+    color: blanchedalmond;
+}
+.img-box{
+    border: 2px solid rgb(150, 150, 150);
+    width: 600px;
+    height: 400px;
+}
+.heading {
+    padding: 6px 0;
+    text-align: center;
+    background-color: darkslateblue;
+    color: aliceblue;
+    font-size: 32px;
+    font-weight: 800;
+}
+img{
+    width: 100%;
+}
+.active {
+    background-color: black;
+}
+.margin-top{
+    margin-top: 2rem;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    margin-left: 2.5rem;
+}
+.active-step {
+    background-color: rgb(30, 233, 47);
+    color: blanchedalmond;
+}
+li{
+    list-style: none;
+    padding: 12px 12px;
+    font-size: 22px;
+    color: rgb(241, 239, 234);
+    background-color: rgb(114, 137, 243);
+    margin-right: 12px;
+    margin-top: 6px;
+    border: 2px solid black;
+}
