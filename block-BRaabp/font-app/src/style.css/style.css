@@ -1,0 +1,151 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Custom Style*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body{
+    max-width: 1300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header{
+    padding: 20px 0;
+    background-color: burlywood;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: 700;
+    color: brown;
+}
+
+main{
+    background-color: antiquewhite;
+}
+
+main input {
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+:root {
+    --main-color: rgb(104, 117, 217);
+    --main-color-hover: rgb(104, 117, 217, 0.2);
+    --track-color: #ddd;
+}
+  
+.customSlider {
+    /* max width of your slider */
+    max-width: 300px;
+    /* Optional: Only If you want to center your slider in the page */
+    margin: auto;
+}
+  
+.customSlider-track {
+    /* Top value to align your track to the center of your thumb */
+    top: 8px;
+    /* thickness of the track */
+    height: 4px;
+   /* default color of your track */
+    background: var(--track-color);
+}
+  
+.customSlider-track.customSlider-track-0 {
+    /* color of the track before the thumb */
+    background: var(--main-color);
+}
+
+.customSlider-thumb {
+    cursor: pointer;
+    /*color for the thumb */
+    background: var(--main-color);
+    /* shape of the thumb: circle */
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* remove default outline when selected */
+    outline: none; 
+}
+  
+.customSlider-thumb:hover {
+    box-shadow: 0 0 0 8px var(--main-color-hover);
+}
+
+.input-section{
+    padding: 22px 0;
+}
+
+.cards {
+    background-color: aliceblue;
+    padding: 12px 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    gap: 20px 20px;
+}
+
+.card {
+    border: 2px solid black;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 6px 0;
+}
+h3 {
+    font-size: 16px;
+    margin: 6px 0;
+}
+
